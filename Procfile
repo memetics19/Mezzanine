@@ -1,1 +1,1 @@
-web: gunicorn project_name.wsgi
+web: sh -c 'cd ./mezzanine/project_template/project_name && exec gunicorn project_name.wsgi --log-file -'
