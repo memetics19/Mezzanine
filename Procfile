@@ -1,1 +1,1 @@
-web: gunicorn mezzanine/project_template/project_name.wsgi
+web: gunicorn project_name.wsgi
