@@ -1,1 +1,1 @@
-web: cd . python manage.py collectstatic --noinput; python setup.py install run_gunicorn -b 0.0.0.0:$PORT
+web: cd . python manage.py collectstatic --noinput; python setup.py install gunicorn -b 0.0.0.0:$PORT
